@@ -1,0 +1,186 @@
+*{
+  text-align: center;
+  box-sizing: border-box;
+}/* align all text to centre*/
+
+header {
+  text-align: center;
+  font: 1rem bold italic ;
+  background-image: url(../images/headerBack.jpg);
+  background-position: bottom;
+  background-size: cover;
+  border: 5px groove white;
+  
+
+}/* adding background image, sizing and border */
+
+footer {
+  background-color: #343330;
+  text-align: center;
+  border: 5px groove white;
+  color: white;
+  font-style: oblique;
+  font-weight: bold;
+}/* background color border an display property selected */
+
+.andrePhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50% ;
+  outline: 3px dotted white;
+  outline-offset: -20px;
+  margin-top: 20px;
+  
+
+}/* adding radius to photo and adjusting size */
+
+.contactMeLinks {
+  list-style-type: none;
+  color: white;
+
+  
+}/*changing list style type an color incase the images doesn't load*/
+
+.navbar{
+  text-decoration: underline;
+  color: white !important;
+}
+
+
+
+
+#experience {
+  border-top-style: groove;
+  font-style: oblique;
+  font-weight: bold;
+  text-decoration: underline
+
+}/* adding a divider between topics */
+
+#education {
+  border-top-style: groove;
+  font-style: oblique;
+  font-weight: bold;
+  text-decoration: underline
+}
+
+#aboutMe {
+  border-top-style: groove;
+  font-style: oblique;
+  font-weight: bold;
+  text-decoration: underline
+}/* adding a divider between topics */
+  
+/* adding a divider between topics */
+.skillsList {
+  list-style-type: none;
+  font-style: oblique;
+}/* adding a divider between topics */
+
+.name{
+  font-weight: bolder
+  ;font-style: oblique;
+}
+
+.contactMeLink2 {
+  padding-left: 1rem
+}
+
+.educationContainer{
+  background-color: rgb(145, 160, 155);
+}
+
+.expreienceContainer{
+  background-color: #8eb69b ;
+ 
+}
+.contentHeads{
+  text-decoration: underline;
+}
+
+.skillsList{
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%) ;
+
+}
+
+
+.skillsContainer{
+  background-color: rgb(168, 154, 128);
+}
+
+.aboutMeContainer{
+  background-color: rgb(206, 206, 188);
+  margin: 0%;
+}
+
+
+@media screen and (max-width:768px){
+.content{
+  display: inline-block; 
+}
+.name {
+  color: white;
+}
+
+.skillsList{
+  display: grid;
+  grid-template-columns: repeat(4, 25%) ;
+
+}
+}
+  
+@media screen and (max-width: 600px) {
+
+body{
+  background-color: rgb(136, 136, 136);
+  color: white;  
+}
+
+.menu{
+  width:auto;
+  background-color: black;
+  
+}
+.name{
+  text-shadow: #bd2929 ;
+  text-shadow: 50% ;
+}
+footer{
+  background-color: black;
+
+}
+.skillsList{
+  display: grid;
+  grid-template-columns: repeat(1, 100%) ;
+
+}
+}
+  
+.contactMeLink:hover {
+  animation-name: contactMeLink;
+  animation-duration: 2s;
+  animation-direction: alternate ;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+@keyframes contactMeLink {
+  0% {background-color: gray;
+    
+  }
+  25% {background-color: white;
+    border-radius: 50%;      
+  }
+  50% {background-color: gray;
+    border-radius: 50%;    
+  }
+  75% {background-color: white;
+    border-radius: 50%;   
+  }
+  100% {background-color: gray;
+    border-radius: 50%;
+      
+  }
+}
+
