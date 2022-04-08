@@ -37,6 +37,11 @@ footer {
 .contactMeLinks {
   list-style-type: none;
   color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  
+  
 
   
 }/*changing list style type an color incase the images doesn't load*/
@@ -46,8 +51,21 @@ footer {
   color: white !important;
 }
 
+.printResumeButton {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px #999;
+}
 
+.printResumeButton:hover {background-color: darkgray
+}
 
+.printResumeButton:active {
+  background-color: rgb(145, 160, 155);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+} 
 
 #experience {
   border-top-style: groove;
@@ -82,8 +100,8 @@ footer {
   ;font-style: oblique;
 }
 
-.contactMeLink2 {
-  padding-left: 1rem
+.contactMeLinkFacebook {
+  padding-left: 10px;
 }
 
 .educationContainer{
@@ -163,24 +181,14 @@ footer{
   animation-direction: alternate ;
   animation-iteration-count: infinite;
   animation-play-state: running;
+
 }
 
 @keyframes contactMeLink {
-  0% {background-color: gray;
-    
-  }
-  25% {background-color: white;
-    border-radius: 50%;      
-  }
-  50% {background-color: gray;
-    border-radius: 50%;    
-  }
-  75% {background-color: white;
-    border-radius: 50%;   
-  }
-  100% {background-color: gray;
-    border-radius: 50%;
-      
-  }
+  0% {
+    transform: translateX(-2px) translateY(-2px);
+   
+
 }
 
+}
