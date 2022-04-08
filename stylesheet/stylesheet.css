@@ -45,22 +45,24 @@ footer {
 
   
 }/*changing list style type an color incase the images doesn't load*/
-
+ #carouselExampleIndicators{
+   padding-bottom: 45px;
+ }
 .navbar{
   text-decoration: underline;
   color: white !important;
 }
 
-.printResumeButton {
+.resumeButton {
   cursor: pointer;
   outline: none;
   box-shadow: 1px 1px #999;
 }
 
-.printResumeButton:hover {background-color: darkgray
+.resumeButton:hover {background-color: darkgray
 }
 
-.printResumeButton:active {
+.resumeButton:active {
   background-color: rgb(145, 160, 155);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -88,6 +90,43 @@ footer {
   font-weight: bold;
   text-decoration: underline
 }/* adding a divider between topics */
+
+.yourDetailsHeader{
+  border-top-style: groove;
+  font-style: oblique;
+  font-weight: bold;
+  text-decoration: underline
+}
+
+.companyDetailsForm{
+  background-color: #343330;
+  color: white;
+  padding-bottom: 25px;
+  
+}
+
+.companyName{
+ padding-right: 96px;
+}
+
+.address{
+  padding-right: 27px;
+}
+
+.email{
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+
+
+#skillsHeader{
+  border-top-style: groove;
+  font-style: oblique;
+  font-weight: bold;
+  text-decoration: underline 
+}
+
   
 /* adding a divider between topics */
 .skillsList {

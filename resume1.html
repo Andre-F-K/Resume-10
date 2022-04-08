@@ -59,7 +59,7 @@
 
                 </ul>
                 <div>
-                    <button class="printResumeButton" onclick="window.print()">Print My Resume</button>
+                    <button class="resumeButton" onclick="window.print()">Print My Resume</button>
                 </div>
             </div>
         </div>
@@ -257,7 +257,7 @@
         </div>
 
         <div class="skillsContainer container-fluid border border-white">               
-            <h2 class="contentHeads"  id="skills"> All My Skills</h2>
+            <h3 class="contentHeads"  id="skillsHeader"> All My Skills</h3>
             <div class="row">
             <div class="skillsList">
                 <div class="skillsItem">Coding</div>
@@ -271,6 +271,39 @@
             </div>
         </div> 
     </div>
+
+    <form action="info" method="post" class="companyDetailsForm">
+        <h3 class="yourDetailsHeader">Your Details</h3>
+        <div class="companyName">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" min="5" max="12" required>
+        </div>
+
+    
+        <div class="celNumber">
+            <label for="celNumber">Tel:</label>
+            <input type="tel" id="celNumber" name="celNumber" required>
+        </div>
+    
+        <div class="address">
+            <label for="address">Adress:</label>
+            <input type="text" id="address" name="address">
+        </div> 
+       
+        <div class="email">
+            E-Mail:
+            <label for="eMail"></label>
+            <input type="email" id="eMail" required>
+        </div>
+    
+
+            
+        <button class="resumeButton" type="submit">Submit</button>
+            
+        <button class="resumeButton" type="reset"> Reset</button>
+    
+    
+        </form>
 
     
 
