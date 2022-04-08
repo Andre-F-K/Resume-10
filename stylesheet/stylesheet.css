@@ -10,8 +10,6 @@ header {
   background-position: bottom;
   background-size: cover;
   border: 5px groove white;
-  
-
 }/* adding background image, sizing and border */
 
 footer {
@@ -28,10 +26,8 @@ footer {
   height: 150px;
   border-radius: 50% ;
   outline: 3px dotted white;
-  outline-offset: -20px;
+  outline-offset: 5px;
   margin-top: 20px;
-  
-
 }/* adding radius to photo and adjusting size */
 
 .contactMeLinks {
@@ -39,35 +35,36 @@ footer {
   color: white;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 5px;
-  
-  
-
-  
+  padding-bottom: 5px;  
 }/*changing list style type an color incase the images doesn't load*/
- #carouselExampleIndicators{
+ 
+#carouselExampleIndicators{
    padding-bottom: 45px;
  }
+ 
 .navbar{
   text-decoration: underline;
   color: white !important;
-}
+} 
+ /* decorating the navbar text  */
 
 .resumeButton {
   cursor: pointer;
   outline: none;
   box-shadow: 1px 1px #999;
 }
+/* animating and styling Resume Buttons */
 
 .resumeButton:hover {background-color: darkgray
 }
+/* animating and styling Resume Buttons when hovering */
 
 .resumeButton:active {
   background-color: rgb(145, 160, 155);
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
 } 
+/* animating and styling Resume Buttons when clicked */
 
 #experience {
   border-top-style: groove;
@@ -83,13 +80,15 @@ footer {
   font-weight: bold;
   text-decoration: underline
 }
+/* adding design to main headers */
 
 #aboutMe {
   border-top-style: groove;
   font-style: oblique;
   font-weight: bold;
   text-decoration: underline
-}/* adding a divider between topics */
+}
+/* adding design to main headers */
 
 .yourDetailsHeader{
   border-top-style: groove;
@@ -97,28 +96,29 @@ footer {
   font-weight: bold;
   text-decoration: underline
 }
+/* adding design to main headers */
 
 .companyDetailsForm{
   background-color: #343330;
   color: white;
-  padding-bottom: 25px;
-  
+  padding-bottom: 25px;  
 }
+/* Styling the company details form */
 
 .companyName{
  padding-right: 96px;
 }
+/* spacing the form lines */
 
 .address{
   padding-right: 27px;
 }
+/* spacing the form lines */
 
 .email{
   padding-right: 30px;
   padding-bottom: 10px;
 }
-
-
 
 #skillsHeader{
   border-top-style: groove;
@@ -127,12 +127,10 @@ footer {
   text-decoration: underline 
 }
 
-  
-/* adding a divider between topics */
 .skillsList {
   list-style-type: none;
   font-style: oblique;
-}/* adding a divider between topics */
+}
 
 .name{
   font-weight: bolder
@@ -171,11 +169,12 @@ footer {
   margin: 0%;
 }
 
-
+/* Media queries max width 768px (tablet)  */
 @media screen and (max-width:768px){
 .content{
   display: inline-block; 
 }
+
 .name {
   color: white;
 }
@@ -186,7 +185,8 @@ footer {
 
 }
 }
-  
+ 
+/* Media queries max width 600px (phone)  */
 @media screen and (max-width: 600px) {
 
 body{
@@ -196,38 +196,36 @@ body{
 
 .menu{
   width:auto;
-  background-color: black;
-  
+  background-color: black;  
 }
+
 .name{
   text-shadow: #bd2929 ;
   text-shadow: 50% ;
 }
+
 footer{
   background-color: black;
-
 }
+
 .skillsList{
   display: grid;
   grid-template-columns: repeat(1, 100%) ;
+}
+}
 
-}
-}
-  
+/* Animating the social media links in footer when hovered */
 .contactMeLink:hover {
   animation-name: contactMeLink;
   animation-duration: 2s;
   animation-direction: alternate ;
   animation-iteration-count: infinite;
   animation-play-state: running;
-
 }
 
+/* Moving the contact me links around */
 @keyframes contactMeLink {
   0% {
     transform: translateX(-2px) translateY(-2px);
-   
-
 }
-
 }
